@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS VARIABLES */
+
+:root {
+  /* Color Scheme */
+  --bg-color: #fbf8e8;  
+  --text-color: #2f2f2f; 
+  --text2-color: #998d66;  
+  --text3-color:rgb(152, 151, 151);
+  --link-color: #1E90FF;  
+  --border-color: #dfd9c4;
+  --hover-color:#848281;
+
+
+  /* Typography */
+  --bs-font-head: "Tinos";
+  --bs-font-body:"Arial";
+  --font-size-base: 16px;
+  --font-size-xxxl: 4rem; 
+  --font-size-xxl:2.2rem;
+  --font-size-xl: 1.5rem; 
+  --font-size-lg: 1.2rem; 
+  --font-size-sm: 0.875rem;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Shadows */
+  --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --box-shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+body{
+    background-color: var(--bg-color)!important;
+    font-family: var(--bs-font-body);
+
+}
+
+
+/*  nav styles   */
+.social-icons{
+    border-bottom: 1px solid var(--border-color) ;
+}
+.social-icons i{
+    font-size: var(--font-size-xl)!important;
+}
+.social-icons i:hover{
+    color: var(--hover-color);
+}
+
+nav{
+    border-bottom: 1px solid var(--border-color) ;
+    font-family: var(--bs-font-body);
+}
+
+nav img{
+    height: 50px;
+    width: 100px;
+}
+.nav-title{
+    font-family: var(--bs-font-head);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--font-size-lg);
+    position: relative;
+}
+nav a:hover{
+    color: var(--hover-color);
+}
+
+
+.nav-contents a::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    background-color: var(--hover-color);
+    height: 2px;
+    width: 0;
+    transition: width .4s linear;
+} 
+.nav-contents a:hover::before{
+    width: 50%;
+}
+.nav-contents a::after{
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 0%;
+    background-color: var(--hover-color);
+    height: 2px;
+    width: 0;
+    transition: width .4s linear;
+}
+
+.nav-contents a:hover::after{
+    width: 50%;
+}
+
+label>i{
+    font-size: var(--font-size-xxl);
+}
+nav input{
+    display: none;
+}
+nav label{
+    display: none;
+}
+
+
+
+h1{
+    font-family: var(--bs-font-head);
+    color: var(--text2-color);
+}
+.login-card{
+    width: 50%;
+}
+
+
+.options a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <!-- ----Custom css----- -->
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+
+    <!-- ----bootstrap  css----- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!------nav start----->
+    <nav class="container-fluid">
+        <div class=" social-icons  py-3">
+            <div class="row">
+                <div class="col d-flex ms-3 gap-4">
+                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                </div>
+                <div class="col d-flex justify-content-end gap-4">
+                    <a href="./loginform.html"><i class="bi bi-person"></i> Account</a>
+                    <a class="me-3" href=""><i class="bi bi-bag-check"></i> Cart </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid navbar navv py-3">
+            <div class="nav-brand nav-title">
+                <img class="ms-5" src="./images/logo.png" alt="" /><br />
+                <b>"Turning Pages, Changing Worlds."</b>
+            </div>
+
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="bi bi-list text-dark"></i>
+            </label>
+
+            <div class="nav-contents d-flex gap-4 gap-md-5 pe-3">
+                <label for="menu">
+                    <i class="bi bi-box-arrow-up-right text-dark"></i>
+                </label>
+                <a href="#home">Home</a>
+                <a href="#offer">Offer</a>
+                <a href="#genre">Books Genre</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#about">About</a>
+            </div>
+
+        </div>
+    </nav>
+    <!------nav end------->
+    <!-----Hero start----->
+    <div class="container-fluid">
+        <div class="row hero">
+            <div class="col-12 col-lg-6 p-5 p-lg-5 mt-lg-5">
+                <h1 class="d-flex ">The Alchemist</h1>
+                <p>
+                    "The Alchemist" by Paulo Coelho is an inspiring tale of self-discovery, following Santiago, a
+                    shepherd,
+                    on his journey to find a hidden treasure. It explores dreams, destiny, and the pursuit of personal
+                    legends.</p>
+                <button class="mt-4">Read More →</button>
+            </div>
+            <div class="col-12 col-lg-4 offset-lg-1">
+                <img src="./images/alchemist.jpeg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid quotes text-center ">
+        <div class="row ">
+            <div class="col-12">
+                <h2>"Books give a soul to the universe, wings to the mind, flight to the imagination, and life to
+                    everything."
+                    <span>— Plato</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!------Hero end------>
+
+    <!-----Main start----->
+    <main>
+        <div class="container-fluid text-center featured mt-lg-5">
+            <div class="row ">
+                <p>SOME QUALITY ITEMS</p>
+                <h2 class="mb-5">Featured Books</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 book-1 books">
+                        <img src="./images/atomichabits.jpeg" alt="" />
+                        <h3>Atomic Habits</h3>
+                        <p>James clear</p>
+                        <h4>$30.00</h4>
+                        <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 book-2 books">
+                        <img src="./images/marcus.jpeg" alt="" />
+                        <h3>Meditations</h3>
+                        <p>Marcus Aurelius</p>
+                        <h4>$40.00</h4>
+                        <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 book-3 books">
+                        <img src="./images/art.jpeg" alt="" />
+                        <h3>The Art of War</h3>
+                        <p>Sun Tzu</p>
+                        <h4>$35.00</h4>
+                        <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 book-4 books">
+                        <img src="./images/ikigai.jpeg" alt="" />
+                        <h3>Ikigai</h3>
+                        <p>Héctor García and Francesc Miralles</p>
+                        <h4>$25.00</h4>
+                        <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                    </div>
+                    <a href="">View all products →</a>
+                </div>
+            </div>
+        </div>
+        <!---- Featured Section ends -->
+
+        <!-- Best Selling Book -->
+        <div class="row best-selling mt-5 ">
+
+            <div class="col-12 col-lg-4 offset-2 bs-book order-2 order-lg-0">
+                <img src="./images/think.jpeg" alt="" />
+            </div>
+            <div class="col-12 col-lg-5 p-5 mb-5 p-lg-2 mt-lg-1 text-left right-content order-1 ">
+                <div class="">
+                    <h2 class="d-flex bs-head ">Best selling <br /> book</h2>
+                </div>
+                <h2 class=" ">Thinking fast and slow</h2>
+                <p class="w-75">"Thinking, Fast and Slow" by Daniel Kahneman explores two thought systems—intuitive and
+                    deliberate—shaping decisions, biases, and human behavior.</p>
+                <h4>$30.00</h4>
+                <a href="">Catch it here →</a>
+            </div>
+        </div>
+
+        <!-- Best Selling Book -->
+        <div class="container-fluid quotes text-center ">
+            <div class="row ">
+                    <h2>"Reading is a discount ticket to everywhere."
+                    <span>— Mary Schmich</span>
+            </div>
+        </div>
+
+        <!-----Offer section start----->
+
+        <div class="container-fluid text-center offer p-lg-5" id="offer">
+            <div class="row">
+                <h2 class="mb-md-5">Offer's</h2>
+                <p>"Your Next Favorite Read, Now on Sale!"</p>
+            </div>
+            <div class="row" id="offer-books">
+                <div class="col-12 col-md-6 col-lg-3 books">
+                    <img src="./images/hyper.jpeg" alt="" />
+                    <h3>Hyper Focus</h3>
+                    <p>James clear</p>
+                    <h4><span>$50.00</span>$30.00</h4>
+                    <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 books">
+                    <img src="./images/cant.jpeg" alt="" />
+                    <h3>Can't Hurt Me</h3>
+                    <p>Marcus Aurelius</p>
+                    <h4><span>$60.00</span>$40.00</h4>
+                    <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 books">
+                    <img src="./images/power.jpeg" alt="" />
+                    <h3>Power</h3>
+                    <p>Sun Tzu</p>
+                    <h4><span>$55.00</span>$35.00</h4>
+                    <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 books">
+                    <img src="./images/do.jpeg" alt="" />
+                    <h3>Do it Today</h3>
+                    <p>Héctor García and Francesc Miralles</p>
+                    <h4> <span>$45.00</span> $25.00</h4>
+                    <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-----Offer section end----->
+
+    <!------Main end------>
+
+    <!-- Genre Collections -->
+    <div class="container-fluid text-center genre p-5 mt-lg-5" id="genre">
+        <div class="row ">
+            <p>SOME QUALITY ITEMS</p>
+            <h2 class="mb-5">Books Genre</h2>
+            <div class="col">
+
+                <input type="radio" id="adventures" name="genre" />
+                <label class="me-5" for="adventures">Adventures</label>
+
+                <input type="radio" id="bio" name="genre" />
+                <label class="me-5" for="bio">Auto Biography</label>
+
+                <input type="radio" id="business" name="genre" />
+                <label class="me-5" for="business">Business</label>
+
+                <input type="radio" id="self" name="genre" />
+                <label class="me-5" for="self">Self improvement</label>
+
+                <input type="radio" id="comics" name="genre" />
+                <label class="me-5" for="comics">Comics</label>
+
+                <!-- Adventure Books -->
+
+                <div class="col adven-books p-3">
+
+                    <div class="row">
+                
+                        <div class="col books">
+                            <img src="./images/adventures/alchemist.jpeg" alt="" />
+                            <h3>The Alchemist</h3>
+                            <p>Paulo coelho</p>
+                            <h4>$30.00</h4>
+                            <h5 class="cart">ADD TO CART</h5>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/adventures/Life of Pi_ A Novel.jpeg" alt="" />
+                            <h3>Life of pi</h3>
+                            <p>Yann Martel</p>
+                            <h4>$40.00</h4>
+                            <h5 class="cart">ADD TO CART</h5>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/adventures/The Pilgrimage.jpeg" alt="" />
+                            <h3>The Pilgrimage</h3>
+                            <p>Sun Tzu</p>
+                            <h4>$35.00</h4>
+                            <h5 class="cart">ADD TO CART</h5>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/adventures/The Prophet.jpeg" alt="" />
+                            <h3>The Prophet</h3>
+                            <p>marcus</p>
+                            <h4>$25.00</h4>
+                            <h5 class="cart">ADD TO CART</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auto -biography -->
+
+                <div class="bio-books">
+                    <div class="row">
+
+                        <div class="col books">
+                            <img src="./images/bio/apj.jpeg" alt="" />
+                            <h3>"Wings of Fire"</h3>
+                            <p>APJ Abdul Kalam</p>
+                            <h4>$30.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/bio/tata.jpeg" alt="" />
+                            <h3>"Beyond the Last Blue Mountain"</h3>
+                            <p> R. M. Lala </p>
+                            <h4>$40.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/bio/jio.jpeg" alt="" />
+                            <h3>"A Shot at History"</h3>
+                            <p>Rohit Brijnath, Abhinav Bindra</p>
+                            <h4>$35.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/bio/sa.jpeg" alt="" />
+                            <h3>"Playing It My Way"</h3>
+                            <p>Sachin Tendulkar</p>
+                            <h4>$25.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business -->
+
+                <div class="business-books ">
+
+                    <div class="row">
+                        <div class="col books">
+                            <img src="./images/atomichabits.jpeg" alt="" />
+                            <h3>Atomic Habits</h3>
+                            <p>James clear</p>
+                            <h4>$30.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/do.jpeg" alt="" />
+                            <h3>Do It Today</h3>
+                            <p>Darius Foroux</p>
+                            <h4>$40.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/think.jpeg" alt="" />
+                            <h3>Thinking Fast and Slow</h3>
+                            <p>Daniel Kahneman</p>
+                            <h4>$35.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/art.jpeg" alt="" />
+                            <h3>The art of War</h3>
+                            <p>Sun Tzu</p>
+                            <h4>$25.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Self-help -->
+
+                <div class="self-books">
+
+                    <div class="row ">
+                        <div class="col books">
+                            <img src="./images/hyper.jpeg" alt="" />
+                            <h3>Hyper Focus</h3>
+                            <p>Chris BAiley</p>
+                            <h4>$30.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/marcus.jpeg" alt="" />
+                            <h3>Meditations</h3>
+                            <p>Marcus Aurelius</p>
+                            <h4>$40.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/power.jpeg" alt="" />
+                            <h3>Power</h3>
+                            <p>Robert Greene</p>
+                            <h4>$35.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/cant.jpeg" alt="" />
+                            <h3>Can't Hurt Me</h3>
+                            <p>David Goggins</p>
+                            <h4>$25.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comics -->
+
+                <div class="comics-books ">
+
+                    <div class="row">
+                        <div class="col books">
+                            <img src="./images/comics/dball.jpeg" alt="" />
+                            <h3>Dragon Ball Z</h3>
+                            <p> Akira Toriyama</p>
+                            <h4>$30.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/comics/one.jpeg" alt="" />
+                            <h3>One Peice</h3>
+                            <p>Eiichiro Oda</p>
+                            <h4>$40.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/comics/tokyo.jpeg" alt="" />
+                            <h3>Tokyo Revengers</h3>
+                            <p>Ken Wakui</p>
+                            <h4>$35.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                        <div class="col books">
+                            <img src="./images/comics/naruto.jpeg" alt="" />
+                            <h3>Naruto</h3>
+                            <p>Masashi Kishimoto</p>
+                            <h4>$25.00</h4>
+                            <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row top-picks">
+                <h3 class="pt-2">Top Picks</h3>
+                <div class="col books">
+                    <img src="./images/do.jpeg" alt="" />
+                    <h3>Do It Today</h3>
+                    <p>Darius Foroux</p>
+                    <h4>$40.00</h4>
+                    <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                </div>
+                <div class="col books">
+                    <img src="./images/adventures/alchemist.jpeg" alt="" />
+                    <h3>The Alchemist</h3>
+                    <p>Paulo coelho</p>
+                    <h4>$30.00</h4>
+                    <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                </div>
+                <div class="col books">
+                    <img src="./images/bio/apj.jpeg" alt="" />
+                    <h3>"Wings of Fire"</h3>
+                    <p>APJ Abdul Kalam</p>
+                    <h4>$30.00</h4>
+                    <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                </div>
+                <div class="col books">
+                    <img src="./images/comics/one.jpeg" alt="" />
+                    <h3>One Peice</h3>
+                    <p>Eiichiro Oda</p>
+                    <h4>$40.00</h4>
+                    <a href="./cart"><h5 class="cart">ADD TO CART</h5></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- MOre Collections Ends -->
+
+    <!-----Blog section start----->
+    <div class="container-fluid text-center mt-lg-5 " id="blogs">
+
+        <div class="row ">
+            <h2 class="my-4">Blogs</h2>
+            <div class="row blogs mb-3">
+                <p>"Discover, Read, and Explore with PageTurner."</p>
+            </div>
+            <div class="row p-5">
+                <div class="col  blogs blog-1">
+                    <div class="mb-3">
+                        <img src="./images/blog/blog-1.jpg" alt="" />
+                    </div>
+                    <div>
+                        <h4>" Exploring the Charm of Vintage Books"</h4>
+                        <button class="mt-2">Read More →</button>
+                    </div>
+
+                </div>
+                <div class="col blogs blog-2">
+                    <div class="mb-3">
+                        <img src="./images/blog/blog-2.jpeg" alt="" />
+                    </div>
+                    <div>
+                        <h4>" Author Spotlight Series revised-Improved."</h4>
+                        <button class="mt-2">Read More →</button>
+                    </div>
+
+
+                </div>
+                <div class="col blogs blog-3">
+                    <div class="mb-3">
+                        <img src="./images/blog/blog-3.jpeg" alt="" />
+                    </div>
+                    <div>
+                        <h4>"Turning Pages or Tapping Screens?"</h4>
+                        <button class="mt-2">Read More →</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----Blog section end----->
+
+    <!-- reviews Section -->
+    <div class="container-fluid mt-3 text-center" id="reviews">
+        <h2>Reviews</h2>
+            <div class="review-slider mt-4">
+                <div class="slide-container">
+                    <div class="slide">
+                        <img src="./images/reviews/img6.jpg" alt="" />
+                        <h3>Abdul</h3>
+                        <p>"Amazing collection of genres! Great discounts and the staff is always helpful and knowledgeable."</p>                        
+                    </div>
+                </div>
+
+                <div class="slide-container">
+                    <div class="slide">
+                        <img src="./images/reviews/img2.jpg" alt="" />
+                        <h3>Kareem</h3>
+                        <p>"Perfect place to find rare books. Excellent service and peaceful reading spots. Absolutely delightful!"</p>
+                    </div>
+
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <img src="./images/reviews/img3.jpg" alt="" />
+                        <h3>Raja</h3>
+                        <p>"From bestsellers to classics, they have it all. Exceptional customer service and fair prices!"</p>
+                    </div>
+
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <img src="./images/reviews/img4.jpg" alt="" />
+                        <h3>Meena</h3>
+                        <p>"Amazing collection of genres! Great discounts and the staff is always helpful and knowledgeable."</p>           
+                    </div>
+
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <img src="./images/reviews/img5.jpg" alt="" />
+                        <h3>Lina</h3>
+                         <p>"A paradise for book lovers! Wide selection, cozy ambiance, and friendly staff. Highly recommended!"</p>
+                    </div>
+
+                </div>
+                <div class="slide-container">
+                    <div class="slide">
+                        <img src="./images/reviews/img6.jpg" alt="" />
+                        <h3>Bob</h3>
+                         <p>"A paradise for book lovers! Wide selection, cozy ambiance, and friendly staff. Highly recommended!"</p>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <!-- reviews Section Ends-->
+    <!-- About us -->
+    <div class="row p-5 mt-3 " id="about">
+        <div class="col-12 col-md-6">
+            <h2 class=" mb-2 mb-lg-3">About Us – PageTurner</h2>
+            <div>
+                <p>
+                    At PageTurner, we bring you books that inspire, transform, and transport you to new worlds. <br><br>
+                    With our tagline, "Turning Pages, Changing Worlds," we celebrate the magic of stories and the joy of
+                    discovery. Explore our curated collection and find your next adventure today!
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 offset-lg-2">
+            <img src="./images/about.png" alt="about" />
+        </div>
+    </div>
+    <!-- About us End-->
+
+    <!-- Subscribe Newsletter -->
+    <div class="container-fluid my-2" >
+        <div class="row p-lg-5" id="subscribe">
+            <div class="col-12 col-lg-6 newsletter">
+                <h2>Subscribe to Our Newsletter<i class="bi bi-send-fill"></i></h2>
+            </div>
+            <div class="col-12 col-lg-6 ">
+                <p class="">Stay updated with the latest releases, special offers, and book recommendations. Join our
+                    PageTurner
+                    community and never miss a page!</p>
+                <form action="" class="">
+                    <input class="" type="email" placeholder="enter your email address here" />
+                    <button class="p-0 m-0">SEND<i class="bi bi-send-fill"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe Newsletter End-->
+
+    <!-----FOoter start----->
+
+    <footer>
+        <div class="row p-3">
+            <div class="col-12  col-md-4 mx-lg-4 col-lg-3">
+                <img class="" src="./images/logo.png" alt="" />
+                <p class="text-dark">"Turning Pages, Changing Worlds."</p>
+            </div>
+            <div class="col-12 col-sm-5 offset-sm-3 offset-lg-0 col-lg-3 offset-3">
+                <h3>About</h3>
+                <p>vision</p>
+                <p>articles</p>
+                <p>careers</p>
+                <p>service terms</p>
+                <p>donate</p>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3 offset-3 offset-sm-0">
+                <h3>My Account</h3>
+                <p>Sign in</p>
+                <p>View Cart</p>
+                <p>My wishlist</p>
+                <p>Track my order</p>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-2 offset-3 offset-sm-2 offset-lg-0 ">
+                <h3>Discover</h3>
+                <p>Books</p>
+                <p>articles</p>
+                <p>Authors</p>
+                <p>Subjects</p>
+                <p> Research</p>
+            </div>
+            <div class="col-12 my-2 text-center">
+                <div class="col my-3  justify-content-around">
+                    <a href="https://www.facebook.com/login/" class="mx-5">FACEBOOK</a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" class="mx-5">INSTAGRAM</a>
+                    <a href="https://www.linkedin.com/login" class="mx-5">LINKEDIN</a>
+                    <a href="https://github.com/login" class="mx-5">GITHUB</a>
+                    <a href="" class="mx-5">HOME</a>
+    
+                </div>
+                <p class="text-muted">© 2024 PageTurner Bookstore. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-----Footer end----->
+</body>
+
+</html>

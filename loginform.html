@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookstoreLogin - PageTurner</title>
+    <!-- ----Custom css----- -->
+    <link rel="stylesheet" href="./loginform.css" type="text/css" />
+
+    <!-- ----bootstrap  css----- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <!------nav start----->
+    <nav class="container-fluid">
+        <div class=" social-icons  py-3">
+            <div class="row">
+                <div class="col d-flex ms-3 gap-4">
+                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                </div>
+                <div class="col d-flex justify-content-end gap-4">
+                    <a href="./loginform.html"><i class="bi bi-person"></i> Account</a>
+                    <a class="me-3" href=""><i class="bi bi-bag-check"></i> Cart </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid navbar navv py-3">
+            <div class="nav-brand nav-title">
+                <img class="ms-5" src="./images/logo.png" alt="" /><br />
+                <b>"Turning Pages, Changing Worlds."</b>
+            </div>
+
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="bi bi-list text-dark"></i>
+            </label>
+
+            <div class="nav-contents d-flex gap-4 gap-md-5 pe-3">
+                <label for="menu">
+                    <i class="bi bi-box-arrow-up-right text-dark"></i>
+                </label>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#offer">Offer</a>
+                <a href="#genre">Books Genre</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+    <!------nav end------->
+
+    <div class="container-fluid p-5 d-flex justify-content-center text-center">
+        <div class="login-card">
+            <h1>Welcome to PageTurner</h1>
+            <p>Sign in to continue your reading journey</p>
+            <form action="./index.html">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required />
+                <label for="floatingPassword">Password</label>
+              </div>
+            
+                <input type="submit" class="btn btn-dark my-3" value="Submit">
+             
+            </form>
+            <div class="options">
+                <a href="/forgot-password">Forgot Password?</a>
+                <a href="./register.html">Create an Account</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

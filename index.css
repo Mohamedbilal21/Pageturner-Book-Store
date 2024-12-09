@@ -537,14 +537,12 @@ input[type="radio"]:checked + label {
     letter-spacing: 1.5px;
 }
 .blogs>div{
-  
     overflow: hidden;
-    
 }
 
 /* Reviews Css */
 #reviews {
-    height: 80vh;
+    height: 93vh;
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden;

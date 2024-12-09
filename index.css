@@ -41,11 +41,11 @@ body{
     font-family: var(--bs-font-body)!important;
     background-color: var(--bg-color)!important;
     color: var(--text-color)!important;
-    overflow-x: hidden!important;
 }
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -65,7 +65,7 @@ nav{
     font-family: var(--bs-font-body);
 }
 
-nav img{
+nav img{   
     height: 75px;
     width: 125px;
 }
@@ -214,6 +214,9 @@ nav label{
 /* hero ends */
 
 /* MAin Start */
+main{
+    overflow: hidden;
+}
 
 main h2{
     font-family: var(--bs-font-head);
@@ -266,6 +269,8 @@ main h3,h4{
     width: 200px;
     padding: 10px;
 }
+
+
 
 
 
@@ -328,6 +333,7 @@ main h3,h4{
 /* Best Selling */
 
 .best-selling{
+    height: 100vh;
     padding-top: 20px;
     line-height: 3;
     scale: .2;
@@ -538,7 +544,7 @@ input[type="radio"]:checked + label {
 
 /* Reviews Css */
 #reviews {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden;
@@ -898,9 +904,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width:500px){
-    .offer {
-        margin-top: 600px!important;
-    }
+    
     body{
         overflow-x: hidden;
         animation: none;

@@ -162,6 +162,8 @@ nav label{
 .hero button:hover{
     width: 160px;
     color: #2f2f2f;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 /* -----------Quotes-------------  */
 
@@ -265,8 +267,8 @@ main h3,h4{
 }
 
 .books img{
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    max-width: 100%;
     padding: 10px;
 }
 
@@ -542,8 +544,9 @@ input[type="radio"]:checked + label {
 
 /* Reviews Css */
 #reviews {
-    height: 93vh;
+    min-height: auto;
     width: 100%;
+    padding: 50px 0;
     margin-bottom: 20px;
     overflow: hidden;
     border-top: 1px solid var(--bg2-color);
@@ -803,7 +806,7 @@ footer a:hover {
             align-items: center;
             justify-content: center;
             top: 74px;
-            right: 100%;
+            left: -100%;
             z-index: 999;
             width:30%;
             padding: 50px;
@@ -901,11 +904,24 @@ footer a:hover {
     }
 }
 
+@media (max-width: 768px) {
+    .best-selling img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media only screen and (max-width:500px){
     
     body{
         overflow-x: hidden;
         animation: none;
+    }
+    /* .hero img{
+        width: 80%;
+    } */
+    .best-selling{
+        text-align:left ;
     }
     #about img{
         max-height:300px ;
@@ -916,4 +932,11 @@ footer a:hover {
         top: 5px;
         right: -5px;
     }
+    footer .row {
+        text-align: center;
+    }
+    footer .col {
+        margin-bottom: 20px;
+    }
+
 }
